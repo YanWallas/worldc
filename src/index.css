@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --text-color: #f5f5f5;
+  --background-color1: #180023;
+  --background-color2: #b60048;
+  --primary-button-color1: #757de9;
+  --primary-button-color2: #e27aa3;
+  --primary-button-color1-hover: #a6acf3;
+  --primary-button-color2-hover: #f9b4cf;
+}
+
+body {
+  color: var(--text-color);
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    var(--background-color1) 10%,
+    var(--background-color2)
+  );
+}
