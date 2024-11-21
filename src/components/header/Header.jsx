@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from '../../assets/logo.png';
 import Button from '../button/Button';
+import Patrocinio from '../../pages/patrocinadores/Patrocinadores';
 
 function Header() {
   return (
@@ -13,17 +14,17 @@ function Header() {
       <div className="flex-1 h-full flex justify-end">
         <ul className="flex gap-9 items-center mr-10">
           <li className="-rotate-0 hover:-rotate-3 duration-200">
-            <a href="#" className="hover:text-white/50 duration-500 font-bold">
+            <a href="/" className="hover:text-white/50 duration-500 font-bold">
               Início
             </a>
           </li>
           <li className="-rotate-0 hover:-rotate-3 duration-200">
-            <a href="#" className="hover:text-white/50 duration-500 font-bold">
+            <a href="/patrocinadores" className="hover:text-white/50 duration-500 font-bold">
               Patrocinadores
             </a>
           </li>
           <li className="-rotate-0 hover:-rotate-3 duration-200">
-            <a href="#" className="hover:text-white/50 duration-500 font-bold">
+            <a href="/atletas" className="hover:text-white/50 duration-500 font-bold">
               Atletas
             </a>
           </li>
@@ -32,7 +33,7 @@ function Header() {
           <Button
             label="Contato"
             clickHandler={() => {
-              console.log('clicou em contato');
+              window.location.href = "/contato";
             }}
           />
         </div>
