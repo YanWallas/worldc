@@ -1,5 +1,7 @@
 import React from 'react';
 import Base from '../../components/base/Base';
+import qrcode from "../../assets/qrcode.png"
+import insta from "../../assets/insta.jpeg"
 
 function Contato() {
   return (
@@ -33,19 +35,46 @@ function Contato() {
           </div>
         </div>
 
-        <div className='mt-6 mb-4'>Entre em contato</div>
+        <div className='mt-6 mb-4 text-8xl font-extrabold tracking-wider text-[#ffffff] drop-shadow-[0_0_20px_rgba(255,20,147,0.7)]'>ENTRE EM CONTATO</div>
 
-        <div className='flex bg-white bg-opacity-0 align-items: stretch gap-20'>
+        <div className='flex bg-w hite mt-10 bg-opacity-0 align-items: stretch gap-20'>
 
-          <div>
-            logo
+          <div className='flex bg-white bg-opacity-0 align-items: stretch gap-20'>
+            <div className="inset-0 flexjustify-center items-center">
+              <img
+                src={qrcode}
+                alt="qrcode"
+                className="w-[20rem] mb-14 h-auto object-contain opacity-90"
+              />
+            </div>
+
+            <div>
+              <div className='font-extrabold tracking-wider text-center text-[#ffffff] drop-shadow-[0_0_20px_rgba(255,20,147,0.7)]'>
+                <div className='bg-gradient-to-r from-pink-400 to-purple-500 py-3 text-center text-white font-bold rounded-md mt-4 mb-1 shadow-lg'>INSTAGRAM</div>
+                <div className='flex bg-white bg-opacity-0 align-items: stretch gap-5'>
+                  <div>
+                    <img
+                      src={insta}
+                      alt="instagram"
+                      className="w-[10rem] mb-10 h-auto text-center object-contain opacity-90"
+                    />
+                  </div>
+
+                  <div className='text-center text-[10px] mt-14'>
+                    <h1 className='mb-2'>worldcgroup</h1>
+                    <p className='text-left'>🎬 Produtora de conteúdos digitais e assessorias</p>
+                    <p className='text-left'>🌎 Especializadas em atletas, influencers e músicos.</p>
+                    <p className='text-left'>🚀Faça parte do nosso time #WORLDC</p>
+                    <p className='text-left'>#seetheworld</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+              <div className='bg-gradient-to-r from-pink-400 to-purple-500 py-3 text-center text-white font-bold rounded-md shadow-lg'>CONTATE-NOS POR EMAIL</div>
+              </div>
+            </div>
           </div>
-
-          <div>
-              <div>instagram</div>
-              <div>Email</div>
-          </div>
-  
         </div>
       </main>
     </Base>
