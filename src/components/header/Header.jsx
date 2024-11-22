@@ -1,7 +1,6 @@
 import React from 'react';
 import Logo from '../../assets/logo.png';
 import Button from '../button/Button';
-import Patrocinio from '../../pages/patrocinadores/Patrocinadores';
 
 function Header() {
   return (
