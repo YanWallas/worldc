@@ -28,6 +28,11 @@ function Header() {
               Atletas
             </a>
           </li>
+          <li className="-rotate-0 hover:-rotate-3 duration-200">
+            <a href="/festival" className="hover:text-white/50 duration-500 font-bold">
+              WC Festival
+            </a>
+          </li>
         </ul>
         <div className="h-full flex items-center mr-4">
           <Button
