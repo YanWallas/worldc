@@ -4,7 +4,7 @@ import planetImage from "../../assets/PlanetImage.png"
 
 function NotFound() {
   return <Base> 
-      <main className="h-full w-full flex flex-col justify-center items-center bg-gradient-to-b from-bg1 to-bg2text-white">
+      <main className="h-full w-full flex flex-col justify-center items-center">
         {/* Planeta explodindo */}
         <div className="inset-0 flex justify-center items-center">
           <img
